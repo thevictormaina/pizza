@@ -1,5 +1,23 @@
-@media only screen and (min-width: 320px){
-  body{
-    background-color: rgb(255, 0, 0);
+@media only screen and (min-width: 310px){
+  #logo {
+    height: 80px;
   }
+  body {
+    background-color: red;
+  }
+  #main {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+  }
+  video {
+    position: absolute;
+    height: 100%;
+    z-index: -2;
+    opacity: 60%;
+  }
+  
 }
