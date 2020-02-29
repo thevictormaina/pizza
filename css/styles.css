@@ -3,11 +3,12 @@
     height: 90px;
   }
   body {
+    position: sticky;
     background-color: red;
     font-family: Montserrat;
     color: rgb(255, 255, 255, 0.8);
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   #video {
     width: 100%;
@@ -34,11 +35,10 @@
   .card {
     border: none;
   }
-  #menu {
-    overflow-y: scroll;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+  a, a:active, a:visited, a:hover {
+    text-decoration: none;
+  }
+  #menu, #meat {
+    min-height: 100vh;
   }
 }

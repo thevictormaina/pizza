@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div id="main" class="container-fluid p-0 vh-100 overflow-hidden">
+  <div id="main" class="container-fluid p-0 vh-100 overflow-hidden position-relative">
     <nav class="navbar navbar-expand-md navbar-dark align-content-center" style="z-index: 100;">
       <a class="navbar-brand" href="index.html">
         <img id="logo" src="assets/logo.png">
@@ -46,12 +46,12 @@
 
     </div>
   </div>
-  <div class="container-fluid position-relative">
-    <div id="menu" class="container-fluid vh-100 position-absolute text-dark bg-white p-4 pt-5 text-center mx-auto">
-      <a href="#main"><i class="fas fa-arrow-circle-up mb-3 h2 text-danger"></i></a>
-      <h3 class="mb-4">Choose a menu.</h3>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
+  <div id="menu" class="container-fluid position-relative text-dark bg-white p-4 pt-5 text-center">
+    <a href="#main"><i class="fas fa-arrow-circle-up mb-3 h2 text-danger"></i></a>
+    <h3 class="mb-4">Choose a menu.</h3>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <a href="#meat">
           <div class="card">
             <div class="card-body">
               <img src="assets/meat.jpg" class="card-img" alt="meat">
@@ -61,8 +61,11 @@
               <p><i class="fas fa-arrow-circle-right"></i></p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
+        </a>
+
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="#veggie">
           <div class="card">
             <div class="card-body">
               <img src="assets/vegetarian.jpeg" class="card-img" alt="meat">
@@ -72,8 +75,10 @@
               <p><i class="fas fa-arrow-circle-right"></i></p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="#drinks">
           <div class="card">
             <div class="card-body p-0">
               <img src="assets/soda.jpg" class="card-img" alt="meat">
@@ -83,11 +88,13 @@
               <p><i class="fas fa-arrow-circle-right"></i></p>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
-  <div class="container"></div>
+  <div id="meat" class="container-fluid bg-white p-4 pt-5">
+    <div>asdasddsfsdfsfsdfsfdsdsfsdfsdfsas</div>
+  </div>
 
 </body>
 
