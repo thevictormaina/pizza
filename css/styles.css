@@ -52,6 +52,9 @@
   #menu div {
     border-radius: 5px;
   }
+  .row {
+    margin: auto;
+  }
 }
 @media only screen and (min-width: 768px) {
   #meat .card-footer {
