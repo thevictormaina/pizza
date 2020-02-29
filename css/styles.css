@@ -4,15 +4,17 @@
   }
   #about-bg {
     background-image: url("../assets/pizzeria.jpg");
+    background-blend-mode: overlay;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 40%;
     z-index: -100;
+    background-color: rgb(85, 85, 85);
   }
   body {
     position: sticky;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 4, 214);
     font-family: Montserrat;
     color: rgb(255, 255, 255, 0.9);
     height: 100%;
