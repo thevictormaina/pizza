@@ -61,7 +61,7 @@
     justify-content: center;
   }
 
-  #menu div {
+  #menu div, table {
     border-radius: 5px;
   }
   .row {
@@ -89,7 +89,6 @@
   h1.display-4 {
     font-size: 3.5rem;
   }
-}
 
 @media only screen and (min-width: 1280px){
   .jumbotron {
