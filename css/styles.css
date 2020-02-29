@@ -1,23 +1,44 @@
 @media only screen and (min-width: 310px){
   #logo {
-    height: 80px;
+    height: 90px;
   }
   body {
     background-color: red;
-  }
-  #main {
-    width: 100%;
+    font-family: Montserrat;
+    color: rgb(255, 255, 255, 0.8);
+    height: 100%;
     overflow: hidden;
+  }
+  #video {
+    width: 100%;
+    /* overflow: hidden; */
     position: absolute;
     top: 0;
     z-index: -1;
     height: 100%;
   }
   video {
-    position: absolute;
+    position: fixed;
     height: 100%;
     z-index: -2;
     opacity: 60%;
   }
-  
+  #collapsibleNavbar .nav-link, #collapsibleNavbar .nav-link:visited, #collapsibleNavbar .nav-link{
+    /* font-family: "Montserrat"; */
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 10px;
+    color: rgb(255, 255, 255, 0.8);
+  }
+  .card {
+    border: none;
+  }
+  #menu {
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
 }
