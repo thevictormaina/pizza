@@ -45,4 +45,45 @@
     top: 0; bottom: 0; left: 0; right: 0;
     height: 100vh;
   }
+  .jumbotron {
+    margin-top: 15%;
+    width: 75%;
+  }
+  #menu div {
+    border-radius: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #meat .card-footer {
+    min-height: 180px;
+  }
+}
+
+@media only screen and (min-width: 1280px){
+  .jumbotron {
+    width: 50%;
+    max-width: 700px;
+    margin-top: 5%;
+  }
+  nav.navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+  }
+  .row {
+    /* max-width: 1200px; */
+    margin: auto;
+  }
+  .row .card-footer {
+    height: 200px;
+  }
+  #drinks .row .card-footer {
+    height: auto;
+  }
+  a[href="#main"]+h3 {
+    margin-top: 70px;
+  }
+  #menu div {
+    height: 150px;
+  }
 }
