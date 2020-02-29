@@ -2,9 +2,17 @@
   #logo {
     height: 90px;
   }
+  #about-bg {
+    background-image: url("../assets/pizzeria.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 60%;
+    z-index: -100;
+  }
   body {
     position: sticky;
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     font-family: Montserrat;
     color: rgb(255, 255, 255, 0.9);
     height: 100%;
@@ -49,6 +57,7 @@
     margin-top: 15%;
     width: 75%;
   }
+
   #menu div {
     border-radius: 5px;
   }
