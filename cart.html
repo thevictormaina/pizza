@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Spot - About</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Mr+Dafoe|Roboto:400,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/416fea9e90.js" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+</head>
+
+<body style="overflow: auto;">
+  <div id="about-bg" class="position-fixed vh-100 vw-100"></div>
+  <nav class="navbar navbar-expand-md navbar-dark align-content-center">
+    <a class="navbar-brand" href="index.html">
+      <img id="logo" src="assets/logo.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon p-0 m-0"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+      <ul class="navbar-nav text-right pr-2">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</i></a></li>
+        <li id="cart" class="nav-item ml-4"><a href="cart.html" class="nav-link"><span id="cart-num"
+              class="mr-2 font-weight-bold"></span><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container pt-4 d-flex flex-wrap justify-content-center" style="max-width: 500px;">
+    <div class="card mx-auto mb-3 text-dark">
+      <div class="card-body">
+        <h3 class="font-weight-bold text-center">Cart Items</h3>
+        <div id="cart-items" class="lead mt-5 mb-4">
+          You have not added anything to the cart.
+        </div>
+      </div>
+      <div class="card-footer">
+        <table class="table table-borderless table-sm m-0">
+          <tbody>
+            <tr>
+              <th scope="row">Total</th>
+              <td><span id="total-amount">$0.00</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div>
+      <button class="btn btn-info text-center lead m-3"><a href="#main"><i
+            class="fas fa-arrow-circle-left mr-3"></i>Back</a></button>
+      <button class="btn btn-primary text-center lead m-3">Checkout<a href="#main"><i
+            class="fas fa-arrow-circle-right ml-3"></i></a></button>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
