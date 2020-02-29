@@ -58,6 +58,7 @@
   .jumbotron {
     margin-top: 15%;
     width: 75%;
+    justify-content: center;
   }
 
   #menu div {
@@ -74,18 +75,28 @@
     border-radius: 10px;
     margin-top: 30px;
   }
+  td {
+    text-align: right;
+  }
+  h1.display-4 {
+    font-size: 2.5em;
+  }
 }
 @media only screen and (min-width: 768px) {
   #meat .card-footer {
     min-height: 180px;
   }
+  h1.display-4 {
+    font-size: 3.5rem;
+  }
 }
 
 @media only screen and (min-width: 1280px){
   .jumbotron {
-    width: 50%;
+    width: 55%;
     max-width: 700px;
     margin-top: 5%;
+    justify-content: start;
   }
   nav.navbar {
     padding-left: 50px;
