@@ -102,12 +102,23 @@
     margin-top: 30px;
   }
 
-  td {
+  #total-amount {
     text-align: right;
   }
 
   h1.display-4 {
     font-size: 2.5em;
+  }
+  input[type="number"], input[type="checkbox"], table select {
+    font-size: 1em;
+    padding: 5px;
+    margin-left: 10px;
+    text-align: center;
+    /* width: 80px; */
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
   }
 }
 

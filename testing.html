@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Pizza Spot</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:500,700|Mr+Dafoe|Roboto:400,700&display=swap'
+    rel='stylesheet'>
+  <link rel='stylesheet' href='css/bootstrap.css'>
+  <link rel='stylesheet' href='css/styles.css'>
+  <script src='js/jquery-3.4.1.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/sweetalert2@9.8.2/dist/sweetalert2.all.min.js'
+    integrity='sha256-VkcwHXtZS2ZHfHSFSP8r1AzueZi37jGMPeHv4OfV1Cg=' crossorigin='anonymous'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='https://kit.fontawesome.com/416fea9e90.js' crossorigin='anonymous'></script>
+  <script src='js/bootstrap.js'></script>
+  <!-- <script src='sweetalert2.min.js'></script> -->
+  <!-- <link rel='stylesheet' href='sweetalert2.min.css'> -->
+  <script src='js/scripts.js'></script>
+</head>
+
+<body style='overflow: auto;'>
+  <div class="container pt-4 d-flex flex-wrap justify-content-center" style="max-width: 500px;">
+    <div class="card mx-auto mb-3 text-dark" style="width: 100%;">
+      <div class="card-body w-100">
+        <h3 class="font-weight-bold text-center">Cart Items</h3>
+        <div id="cart-items" class="lead mt-5 mb-4">
+        </div>
+      </div>
+      <div class="card-footer">
+        <table class="table table-borderless table-sm m-0">
+          <tbody>
+            <tr>
+              <th scope="row">Total</th>
+              <td class="text-right"><span id="total-amount">$0.00</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div>
+      <button class="btn btn-info text-center lead m-3" id="testing"><a href="#main"><i
+            class="fas fa-arrow-circle-left mr-3" ></i>Back</a></button>
+      <button class="btn btn-primary text-center lead m-3">Checkout<a href="#main"><i
+            class="fas fa-arrow-circle-right ml-3"></i></a></button>
+    </div>
+  </div>
+</body>
+
+</html>
