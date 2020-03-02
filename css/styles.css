@@ -1,4 +1,7 @@
 @media only screen and (min-width: 310px) {
+  html {
+    scroll-behavior: smooth;
+  }
   #logo {
     height: 90px;
   }

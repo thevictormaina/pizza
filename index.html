@@ -9,9 +9,11 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.4.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/416fea9e90.js" crossorigin="anonymous"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -38,7 +40,7 @@
     <div
       class="jumbotron bg-transparent mb-5 mx-auto h-50 text-center d-flex flex-wrap align-content-center">
       <h1 class="font-weight-bold text-lg-left display-4">Taste the best pizza in town.</h1>
-      <a href="#menu"><button class="btn btn-warning mt-5">Order Now</button></a>
+      <a href="#menu"><button id="order-now" class="btn btn-warning mt-5">Order Now</button></a>
 
     </div>
   </div>
@@ -78,7 +80,7 @@
     <h3 class="mb-4">Meat Pizzas</h3>
     <div class="row">
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
+        <div id="pepperoni" class="card">
           <div class="card-body p-0">
             <img src="assets/pepperoni.png" class="card-img" alt="pepperoni">
           </div>
@@ -89,7 +91,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
+        <div id="hawaiian" class="card">
           <div class="card-body p-0">
             <img src="assets/hawaiian.jpg" class="card-img" alt="hawaiian">
           </div>
@@ -100,7 +102,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
+        <div id="bbq-chicken" class="card">
           <div class="card-body p-0">
             <img src="assets/bbq-chicken.jpg" class="card-img" alt="bbq chicken">
           </div>
@@ -111,7 +113,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
+        <div id="beef" class="card">
           <div class="card-body p-0">
             <img src="assets/beef.jpeg" class="card-img" alt="beef mince">
           </div>
@@ -128,7 +130,7 @@
     <h3 class="mb-4">Vegetarian Pizzas</h3>
     <div class="row">
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
+        <div id="mushroom" class="card">
           <div class="card-body p-0">
             <img src="assets/mushroom.jpg" class="card-img" alt="pepperoni">
           </div>
@@ -139,7 +141,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
+        <div id="eggplant" class="card">
           <div class="card-body p-0">
             <img src="assets/eggplant.jpg" class="card-img" alt="hawaiian">
           </div>
