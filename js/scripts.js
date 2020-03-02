@@ -10,3 +10,10 @@ function drink(type, flavor, amount, deliver) {
   this.amount = amount;
   this.deliver = deliver;
 }
+
+$().ready(function () {
+  $("#pepperoni").click(function () {
+    var random = "<h1>Hello!</h1>"
+    swal(random)
+  })
+});
