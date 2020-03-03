@@ -67,7 +67,7 @@ $().ready(function () {
         $("p#error").text("Invalid order.");
       } else {
         thisOrder.addToCart();
-        $("span#cart-num").text(JSON.parse(localStorage.order).length);
+        $("#cart #cart-num").text(JSON.parse(localStorage.order).length);
       };
     });
   });
@@ -75,21 +75,57 @@ $().ready(function () {
     if (localStorage.getItem("order") == undefined) {
       $("#cart-items").html('<p class="text-center">Your cart is empty.</p>');
     } else {
-      $("span#cart-num").text(JSON.parse(localStorage.order).length);
+      $("#cart #cart-num").text(JSON.parse(localStorage.order).length);
       var order = JSON.parse(localStorage.order);
       order.forEach(function (item) {
         var test = '<tr> <td class="text-left w-75">' + JSON.parse(item).quantity + " " + JSON.parse(item).size + " " + JSON.parse(item).type + ' Pizza(s)</td> <td class="text-right w-25">KES ' + JSON.parse(item).price + '</td> </tr>';
         $("#insertItems").append(test);
       })
     }
-    var num = JSON.parse(order[0]).price;
-    var nums = [];
-    order.forEach(function (item) {
-      nums.push(num);
+  })
+  var nums = [];
+  for (var i = 0; i < JSON.parse(localStorage.order).length; i++) {
+    var num = JSON.parse(JSON.parse(localStorage.order)[i]).price;
+    console.log(num)
+    nums.push(num);
+  };
+  total = nums.reduce(function (item, num) {
+    return item + num;
+  })
+  $("#total-amount").text("KES " + total + ".00");
+  $("button#delivery").click(function () {
+    var deliver = $("#deliver").prop("checked");
+    var pickup = $("#pickup").prop("checked");
+    if (deliver == true) {
+      $("#pickup-option").hide();
+      $("#deliver-address").fadeIn();
+    } else if (pickup == true) {
+      $("#pickup-option").hide();
+      $("#pick-address").fadeIn();
+    } else if (deliver != true && pickup != true) {
+      $("#error2").text("Please pick an option.");
+    }
+  })
+  $("button.place-order").first().click(function (event) {
+    Swal.fire({
+      icon: "success",
+      title: "Done.",
+      text: "Your order has been placed."
+    }).then(function () {
+      localStorage.removeItem("order");
+      location.assign("index.html");
     })
-    var total = nums.reduce(function (item, num) {
-      return item + num;
+    event.preventDefault();
+  })
+  $(".place-order").submit(function (event) {
+    event.preventDefault();
+    Swal.fire({
+      icon: "success",
+      title: "Done.",
+      text: "Your order has been placed."
+    }).then(function () {
+      localStorage.removeItem("order");
+      location.assign("index.html");
     })
-    $("#total-amount").text("KES " + total + ".00");
-  });
-})
+  })
+});
