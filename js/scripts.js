@@ -74,7 +74,11 @@ $().ready(function () {
   $().ready(function () {
     if (localStorage.getItem("order") == undefined) {
       $("#cart-items").html('<p class="text-center">Your cart is empty.</p>');
+      $("#checkout").attr("disabled", true).css("cursor", "default");
+      $("#clear-cart").attr("disabled", true).css("cursor", "default");
     } else {
+      $("#checkout").removeAttr("disabled").css("cursor", "pointer");
+      $("#clear-cart").removeAttr("disabled").css("cursor", "pointer");
       $("#cart #cart-num").text(JSON.parse(localStorage.order).length);
       var order = JSON.parse(localStorage.order);
       order.forEach(function (item) {

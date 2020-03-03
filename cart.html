@@ -67,7 +67,7 @@
             class="fas fa-arrow-circle-left mr-3"></i>Back</a></button>
       <button id="clear-cart" onclick="localStorage.removeItem('order'); location.reload()" class="btn btn-danger"><i
           class="fas fa-times-circle mr-3"></i>Clear Cart</button>
-      <button class="btn btn-primary text-center lead m-3" onclick="location.assign('checkout.html')">Checkout<a
+      <button type="button" class="btn btn-primary text-center lead m-3" id="checkout" onclick="location.assign('checkout.html')">Checkout<a
           href="#main"><i class="fas fa-arrow-circle-right ml-3"></i></a></button>
     </div>
   </div>
