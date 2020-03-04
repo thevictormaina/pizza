@@ -1,5 +1,4 @@
 var order = [];
-
 function Pizza(type, size, toppings, quantity, crust, price) {
   this.type = type;
   this.size = size;
@@ -23,7 +22,6 @@ Pizza.prototype.appendPrice = function () {
     return 400;
   }
 }
-
 Pizza.prototype.getCost = function () {
   var baseCost = this.appendPrice();
   if (this.size == "large") {
@@ -38,7 +36,6 @@ Pizza.prototype.getCost = function () {
   }
   return baseCost * parseInt(this.quantity);
 }
-
 Pizza.prototype.addToCart = function () {
   order.push(JSON.stringify(this));
   localStorage.setItem("order", JSON.stringify(order));
@@ -48,7 +45,6 @@ Pizza.prototype.addToCart = function () {
     footer: "<table class='table table-sm table-borderless'><tbody><tr><td class='text-left'>Cost</td><td class='text-right'>KES " + this.price + "</td></tr></tbody><table>"
   });
 }
-
 $().ready(function () {
   $(".pizza").click(function (event) {
     var thisOrder = new Pizza($("h4", this).first().text(), "", "", "", "");
